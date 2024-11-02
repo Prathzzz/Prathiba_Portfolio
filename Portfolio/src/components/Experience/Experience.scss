@@ -1,0 +1,90 @@
+@import "../../App.scss";
+body{
+  cursor: none;
+}
+.experience-container {
+    padding: 50px;
+    
+        @include mobile{
+          height: 100%;
+          width: 100%;
+          padding: 10px;
+          flex-direction: column;
+          overflow: hidden;
+          align-items: center;
+          text-align: center;
+
+    }
+    h1 {
+      @include mobile{
+        font-size: 50px;
+        text-align: center;
+        width: 100%;
+    }
+      text-align: center;
+      font-size: 60px;
+      margin-bottom: 120px;
+      color: #ffffff; // Heading color
+    }
+  
+    .cards {
+      @include mobile{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+    }
+        display: flex;
+        flex-direction: row;
+        gap: 95px;
+        align-items: center;
+        .card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          height: 400px;
+          
+          width:500px;
+          border-radius: 10px;
+          color: white;
+          
+          cursor: pointer;
+          transition: transform 400ms;
+      
+          
+          img{
+            height: 300px;
+            width: 350px;
+          }
+          p.heading {
+            font-size: 30px;
+            font-weight: 600; /* Adjust as needed */
+          }
+      
+          p {
+            margin: 0; /* Ensures no extra spacing around paragraphs */
+          }
+      
+          p:nth-child(n + 2) { /* Targets all paragraphs after the first one */
+            font-size: 20px;
+          }
+      
+          &:hover {
+            transform: scale(1.2);
+            @include mobile{
+              transform: scale(0.8);
+          }
+          }
+        }
+      
+        &:hover > .card:not(:hover) {
+          filter: blur(10px);
+          transform: scale(0.9);
+        }
+      }
+      
+  }
+  

@@ -1,0 +1,100 @@
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0; /* Customize this color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of everything */
+}
+
+.hello-screen {
+    text-align: center;
+
+    h1 {
+        font-size: 4rem;
+        color: #333; /* Customize this color */
+        opacity: 0; /* Start with hidden */
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition */
+
+        /* Define classes for each language */
+        &.hello {
+            opacity: 1; /* English */
+            transform: scale(1.2); /* Slightly larger for emphasis */
+            animation: fadeIn 0.5s forwards, fadeOut 0.5s 1.5s forwards; /* Fade in and out */
+        }
+        
+        &.tamil {
+            opacity: 1; /* Tamil */
+            transform: scale(1.2);
+            animation: fadeIn 0.5s forwards, fadeOut 0.5s 1.5s forwards; /* Fade in and out */
+        }
+        
+        &.japanese {
+            opacity: 1; /* Japanese */
+            transform: scale(1.2);
+            animation: fadeIn 0.5s forwards, fadeOut 0.5s 1.5s forwards; /* Fade in and out */
+        }
+
+        &.philippine {
+            opacity: 1; /* Philippine */
+            transform: scale(1.2);
+            animation: fadeIn 0.5s forwards, fadeOut 0.5s 1.5s forwards; /* Fade in and out */
+        }
+
+        &.dutch {
+            opacity: 1; /* Dutch */
+            transform: scale(1.2);
+            animation: fadeIn 0.5s forwards, fadeOut 0.5s 1.5s forwards; /* Fade in and out */
+        }
+
+        &.hindi {
+            opacity: 1; /* Hindi */
+            transform: scale(1.2);
+            animation: fadeIn 0.5s forwards, fadeOut 0.5s 1.5s forwards; /* Fade in and out */
+        }
+
+        &.french {
+            opacity: 1; /* French */
+            transform: scale(1.2);
+            animation: fadeIn 0.5s forwards, fadeOut 0.5s 1.5s forwards; /* Fade in and out */
+        }
+
+        &.german {
+            opacity: 1; /* German */
+            transform: scale(1.2);
+            animation: fadeIn 0.5s forwards, fadeOut 0.5s 1.5s forwards; /* Fade in and out */
+        }
+
+        &.polish {
+            opacity: 1; /* Polish */
+            transform: scale(1.2);
+            animation: fadeIn 0.5s forwards, fadeOut 0.5s 1.5s forwards; /* Fade in and out */
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}

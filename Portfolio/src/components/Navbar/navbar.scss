@@ -1,0 +1,117 @@
+@import "../../App.scss";
+
+.navbar{
+    height: 100px;
+    cursor: none;
+    .wrapper{
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+        @include mobile{
+            justify-content: flex-end;
+            padding: 20px;
+        }
+        span{
+            font-weight: bold;
+            font-size: 30px;
+            @include mobile{
+                display: none;
+            }
+        }
+
+        .social{
+            display: flex;
+            gap: 20px;
+            @include mobile{
+              justify-content: flex-end;
+              padding: 20px;}
+            /* From Uiverse.io by elisapi */
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+  }
+  
+  /* for all social containers */
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(65, 29, 131);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border-radius: 30px;
+  
+    &:hover {
+      transform: scale(1.2);
+      transition-duration: 0.3s;
+    }
+    &.containerOne {
+        background-color:#ffffff9d ;
+      }
+    &.containerOne:hover {
+      background-color:#ffffff ;
+    }
+    &.containerTwo {
+        background-color:  #0073b19a;
+      }
+    &.containerTwo:hover {
+      background-color:  #0072b1;
+    }
+    &.containerThree {
+        background-color:  #128c7e9c;
+      }
+    &.containerThree:hover {
+      background-color:  #128c7e;
+    }
+    &.containerFour {
+        background-color:  #d629779f;
+      }
+    &.containerFour:hover {
+      background-color:  #d62976;
+    }
+  
+    &:active {
+      transform: scale(0.9);
+      transition-duration: 0.3s;
+    }
+  }
+  
+  .socialSvg {
+    width: 17px;
+  
+    path {
+      fill: rgb(255, 255, 255);
+    }
+  
+    .socialContainer:hover & {
+      animation: slide-in-top 0.3s both;
+    }
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+            
+        }
+    }
+}

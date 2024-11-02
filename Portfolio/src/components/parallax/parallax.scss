@@ -1,0 +1,60 @@
+@import "../../App.scss";
+
+.parallax{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;cursor: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    h1{
+        font-size: 100px;
+        position: absolute;
+        top: 15%; /* Center horizontally */
+        z-index: 2;
+        @include mobile{
+            font-size: 72px;
+            text-align: center;
+        }
+    }
+    .mountain{
+        background-image: url("/mountains.png");
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        z-index: 4;
+        @include mobile{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    .planets{
+        background-image: url("/pl.png");
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        position: absolute;
+        z-index: 3;
+        @include mobile{
+            top: 0%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    .stars{
+        background-image: url("/stars.png");
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        
+    }
+}

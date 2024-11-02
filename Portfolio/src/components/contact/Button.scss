@@ -1,0 +1,78 @@
+/* From Uiverse.io by KhaledMatalkah */
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes particles {
+  0% {
+    transform: translateZ(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(230px, 80px);
+    opacity: 0;
+  }
+}
+
+.button {
+  position: relative;
+  background: transparent;
+  display: inline-block;
+  background-size: 200% auto;
+  border: 1px solid;
+  border-radius: 25px;
+  color: #43a1c0;
+  background: linear-gradient(to right, #840aa6, #30ffa5);
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+  padding: 15px 30px;
+  font-size: 30px;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  animation: floating 3s ease-in-out infinite;
+  transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -30px;
+    border-radius: 30px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    width: 5px;
+    height: 5px;
+    background: #fefefe;
+    animation: particles 2s infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    color: #43a1c0;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.233);
+    transform: scale(1.05);
+    background-position: right center;
+    background: linear-gradient(to right, #cc7deb, #7fe1e4);
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+  }
+}
