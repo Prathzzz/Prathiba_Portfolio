@@ -50,7 +50,7 @@ const Hero = () => {
     <div className="hero">
         <div className="wrapper">
             <div className="imageContainer">
-        <img src="/mee.jpg" alt="" />
+        <img src="b.png" alt="" />
         </div>
             <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate" >
                 <motion.h2 variants={textVariants}>I'M PRATHIBA MAHESHWARI</motion.h2>

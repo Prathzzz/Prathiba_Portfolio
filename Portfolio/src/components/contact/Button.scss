@@ -28,14 +28,14 @@
   display: inline-block;
   background-size: 200% auto;
   border: 1px solid;
-  border-radius: 25px;
+  border-radius: 50px;
   color: #43a1c0;
   background: linear-gradient(to right, #840aa6, #30ffa5);
     -webkit-background-clip: text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
-  padding: 15px 30px;
-  font-size: 30px;
+  padding: 10px 25px;
+  font-size: 25px;
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
   animation: floating 3s ease-in-out infinite;
   transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;

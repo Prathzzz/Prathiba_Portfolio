@@ -3,6 +3,7 @@ import Links from './Links/Links';
 import { motion } from 'framer-motion';
 import './sidebar.scss';
 import ToggleButton from './toggleButton/ToggleButton';
+import Cursor from '../cursor/Cursor';
 const variants = {
     open: {
         clipPath: "circle(1200px at 50px 50px)", // Ensure 'px' is added to radius values
@@ -28,6 +29,7 @@ const Sidebar = () => {
     
 
     return (
+    
         <motion.div className="sidebar" animate={open ? "open" : "closed"}>
             <motion.div className="bg" variants={variants}>
                 <Links />

@@ -25,11 +25,11 @@ const App = () => {
         <>
         <Cursor/>
           <section id="Homepage">
-            <Navbar />
+            <Navbar/>
             <Hero />
           </section>
-          <section id="AboutMe">
-            <a href="#"><Parallax type="aboutme" /></a>
+          <section id="About Me">
+            <a href="#"><Parallax type="About Me" /></a>
           </section>
           <section><Services /></section>
           <section id="Projects">
