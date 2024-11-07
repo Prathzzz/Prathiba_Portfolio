@@ -8,7 +8,7 @@ body{
         @include mobile{
           height: 100%;
           width: 100%;
-          padding: 10px;
+          padding: 1px;
           flex-direction: column;
           overflow: hidden;
           align-items: center;
@@ -17,9 +17,11 @@ body{
     }
     h1 {
       @include mobile{
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
         width: 100%;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
       text-align: center;
       font-size: 46px;
@@ -29,15 +31,14 @@ body{
   
     .cards {
       @include mobile{
-        height: 100%;
+        height: 10%;
         width: 100%;
         flex-direction: column;
         align-items: center;
-        margin-left: auto;
     }
         display: flex;
         flex-direction: row;
-        gap: 95px;
+        gap: 10px;
         align-items: center;
         .card {
           display: flex;
@@ -50,7 +51,12 @@ body{
           width:450px;
           border-radius: 10px;
           color: white;
-          
+          @include mobile{
+            width: 100%;
+            padding: 1px;
+            padding-top: 0;
+            gap: 0px;
+          }
           
           transition: transform 400ms;
       
@@ -58,18 +64,32 @@ body{
           img{
             height: 300px;
             width: 350px;
+            @include mobile{
+              display: none;
+            }
           }
           p.heading {
             font-size: 30px;
-            font-weight: 600; /* Adjust as needed */
+            font-weight: 600;
+            @include mobile{
+              width: 100%;
+              font-weight: 1000;
+            }
           }
       
           p {
-            margin: 0; /* Ensures no extra spacing around paragraphs */
+            margin: 0;
+            @include mobile{
+            }
+            /* Ensures no extra spacing around paragraphs */
           }
       
           p:nth-child(n + 2) { /* Targets all paragraphs after the first one */
             font-size: 20px;
+            @include mobile{
+              font-size: 17px;
+              align-self: center;
+            }
           }
       
           &:hover {

@@ -13,8 +13,7 @@
         font-size: 36px;
       h1{
         @include mobile{
-          padding-top: 217px;
-          font-size: 34px;
+          display: none;
       }
       }
         .progressBar{
@@ -97,6 +96,8 @@
                 transition: transform 0.2s ease-out;
                 @include mobile{
                  bottom: 11px;
+                 width: 90px;
+                 height: 90px;
               }
               }
               button:hover {

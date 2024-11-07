@@ -21,9 +21,9 @@
             gap: 20px;
             width: 50%;
             @include mobile {
-                height: 50%;
+                height: 100%;
                 width: 100%;
-                gap: 20px;
+                gap: 10px;
                 align-items: center;
                 text-align: center;
             }
@@ -37,7 +37,9 @@
                 color: rebeccapurple;
                 letter-spacing: 10px;
                 @include mobile {
-                    font-size: 16px;
+                    padding: 30px;
+                    padding-top: 10px;
+                    font-size: 26px;
                 }
             }
             h1 {
@@ -72,10 +74,7 @@
         position: relative;  // Changed from right to left
         z-index: 1;
         @include mobile {
-            height: 50%;
-            width: 100%;
-            top: unset;
-            bottom: 0;
+            display: none;
         }
         img {
             width: 100%;
@@ -94,4 +93,7 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+    @include mobile{
+        font-size: 30vh;
+      }
 }

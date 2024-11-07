@@ -53,6 +53,10 @@
     overflow: hidden;
     transition-duration: 0.3s;
     border-radius: 30px;
+    @include mobile{
+      width: 40px;
+      height: 40px;
+    }
   
     &:hover {
       transform: scale(1.2);
